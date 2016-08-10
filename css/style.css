@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1215px;
+}
+#primary_nav_wrap {
+	margin-top:0;
+    height: 38px;
+    background-color: aquamarine;
+}
+
+#primary_nav_wrap ul {
+	list-style:none;
+	position:relative;
+	float:right;
+	margin:0;
+	padding:0
+}
+
+/*
+#primary_nav_wrap ul a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:38px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+*/
+
+.left-meu ul a {
+	display:block;
+	color:#1f6ca9;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:38px;
+	padding:0 15px;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+#primary_nav_wrap ul li {
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+.left menu ul li {
+    color: #1f6ca9;
+}
+
+.left-menu li:hover {
+	background:#4eabda;
+}
+
+.right-menu li a:hover {
+	background:#lime;
+}
+
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+/*делаем элмент - блочным, убираем лишние отступы, убираем точки-маркеры
+ Do item - block, remove the extra padding, remove the marker point*/
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/*зачищаем края. Без этого блока работать будет, но лучше - с ним  we clean edge. Without this unit will work, but better - with him*/
+/*
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+*/
+/*делаем меню из элементов - они теперь, прижаты. А также - позиционированы. Чтобы Выпаающее меню - позиционировалось от них. do menu items - they are now pressed. As well - positioned. To Vypaayuschee menu - was positioned on them.
+
+*/
+.menu_wrapper ul li {
+    float: left; /*изменив на right - прижмем к правому краю и перетосуем*/
+    position: relative; /*Если убрать это свойство - блоки будут позиционироваться по левому верхнему краю*/
+}
+
+.menu_wrapper ul li a {
+    display: block; /*Если не сделать, то событие "Ховер" - будет "соскальзывать"*/
+    padding: 10px; /*"красивые отступы от края элемента margin"*/
+    color: white; /*Цвет текста*/
+    background-color: red; /*фот текста*/
+    text-decoration: none; /*убираем по умолчнию подчеркивание ссылки*/
+	}
+.menu_wrapper ul li a:hover {
+    background-color: black;/* изменение оформления наведенного поля на "черный"*/
+	display: block; /*Если не сделать, то событие "Ховер" - будет "соскальзывать"*/
+}
+.menu_wrapper ul li ul { /*по умолчанию поля подменю - есть, но не отображаются, т.к.   display: none;*/    
+	display: none;
+    position: absolute;
+	width:120px;
+    top: 37px;
+    left: 0px;
+    background-color: red;
+    border: 1px solid red;
+}
+.menu_wrapper ul li ul li { /*делаем так, что каждый элемент списка - становится блочным элементом*/
+    display: block; /*Элемент не обязательный, но вполне желательный*/
+	width:120px;
+}
+.menu_wrapper ul li ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+.menu_wrapper ul li:hover ul { /*при наведении на элемент списка верхнего урвня li:hover - меню проявляется*/
+    display: block;
+}
+/*Задания:
+1. Поменять цвет меню.
+2. Поменять подчеркивание ссылки - сделать "зачеркивание"
+3. Сдвинуть место появления выпадающего меню на 15 пикселей вправо
+4. Сделать так, чтобы все все меню второго уровня появлялись сразу под главным меню и имели такую же ширину как главное меню.
+5. Заменить цвет, фона верхнего меню при наведении на синий.
+6. Сделать изменение фона при наведение на пункты меню (выпадающих элементов).
+7*. "Перетосовать" элементы меню только в CSS
+*/
