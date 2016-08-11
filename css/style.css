@@ -13,6 +13,7 @@ body {
     width: 1215px;
     height: 1066px;
     margin: 0 auto;
+/*    position: absolute;*/
 }
 
 .primary_nav_wrap {
@@ -22,7 +23,6 @@ body {
     background-repeat: repeat-x;
 }
 
-/*url('../images/background.png');*/
 .primary_nav_wrap ul {
 	list-style:none;
 	position:relative;
@@ -34,7 +34,7 @@ body {
 	font-weight:700;
 	font-size:14px;
 	line-height:38px;
-	padding:0 15px;
+	padding:0 8px;
 	font-family:"Tahoma",sans-serif
 }
 
@@ -73,7 +73,6 @@ body {
 }
 
 .right-menu li a {
-    
     display:block;
 	color: white;
 	text-decoration:none;
@@ -93,15 +92,6 @@ body {
 }
 
 
-
-/*
-.right menu li {
-    color: #1f6ca9;
-}
-*/
-
-
-
 .right-menu li a:hover {
 	background:background: rgba(241,111,92,1);
 background: -moz-linear-gradient(top, rgba(241,111,92,1) 0%, rgba(81,176,220,1) 0%, rgba(46,122,196,1) 100%);
@@ -115,62 +105,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16f5c', end
     border-radius: 2px;
 }
 
-
-
-
-/*
-.primary_nav_wrap ul ul
-{
-	display:none;
-	position:absolute;
-	top:100%;
-	left:0;
-	background:#fff;
-	padding:0
-}
-*/
-
-
-
-/*
-.primary_nav_wrap ul ul a
-{
-	line-height:120%;
-	padding:10px 15px
-}
-*/
-
-
-
-.primary_nav_wrap ul li:hover > ul
-{
+.primary_nav_wrap ul li:hover > ul {
 	display:block
 }
 
 .flag {
     padding-top: 8px;
-    
 }
 
-/*url('../images/background.png');*/
-/*main*/
 
 .main {
     background-image: url('../images/Background-copy.png');
     background-color: azure;
     height: 1028px;
     z-index: -1;
+/*    padding-top: 212px;*/
+    font-family: "Tahoma";
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+        
     padding-top: 212px;
-    font-family: Tahoma;
 }
 
 .loginbox {
     background-image: url('../css/images/Layer-2-copy.png');
+/*    position:absolute;*/
     margin: 0 auto;
     height: 613px;
     width: 560px;
-    text-align: center;
+/*    text-align: center;*/
     padding-top: 17px;
+/*    padding-top: 212px;*/
+    display:inline-block;
 }
 
 h2 {
@@ -225,7 +192,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7ac4', end
     cursor: pointer;
     height: 35px;
     width: 276px;
-    
 }
 
 .updates {
@@ -242,15 +208,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e7ac4', end
     border: none;
     border-bottom: 1px solid #494948;
     padding-left: 18px;
-    font-family: Tahoma;
+    font-family: "Tahoma";
     font-size: 14px;
-    
 }
 
 feildset input {
     float:left;
     padding-left: 0;
-    
 }
 
 .databox:hover {
@@ -292,10 +256,10 @@ feildset input {
     left: 100%;
     margin-left: 10px;
 }
+
 fieldset input{
     display: inline-block
     float: left;
-    
 }
 
 .fb {
@@ -305,6 +269,7 @@ fieldset input{
 fieldset {
     margin-top: 30px;
     border: none;
+    
 }
 
 .create {
@@ -320,15 +285,11 @@ fieldset {
     padding-right: 0;
 }
 
-
-
 .verticle{
    width: 0px;
    height: 28px;
         color: #60b5ed;
 }
-
-
 
 .vertical-line{
   width: 1px; 
@@ -336,7 +297,6 @@ fieldset {
   height: 30px; 
     float: right;
     padding-top: 7px;
-
 }
 
 .entrar {
@@ -345,6 +305,17 @@ fieldset {
 
 .right-menu li span {
     text-decoration: underline;
-    
 }
 
+
+.cbx, .databox{
+/*
+      float: left; 
+  
+*/
+/*    left: 150px;*/
+}
+
+.gauntlet {
+/*    position: relative;*/
+}
