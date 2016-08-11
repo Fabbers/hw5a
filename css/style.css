@@ -5,13 +5,13 @@
 
 body {
     width: 100%;
-    height: 500px;
+    height: 100%;
     font-family: "Tahoma";
 }
 
 .wrapper {
     width: 1215px;
-/*    height: 1063px;*/
+    height: 1066px;
     margin: 0 auto;
 }
 
@@ -348,8 +348,3 @@ fieldset {
     
 }
 
-.wrapper {
-    width: 1215px;
-    height: 1266;
-    margin: 0 auto;
-}
