@@ -4,8 +4,17 @@
 }
 
 body {
-    width: 1215px;
+    width: 100%;
+    height: 500px;
+    font-family: "Tahoma";
 }
+
+.wrapper {
+    width: 1215px;
+/*    height: 1063px;*/
+    margin: 0 auto;
+}
+
 .primary_nav_wrap {
 	margin-top:0;
     height: 38px;
@@ -319,18 +328,7 @@ fieldset {
         color: #60b5ed;
 }
 
-.pos {
-    margin: 0;
-    padding: 0;
-    
-        
-    
-}
 
-td {
-    border-left: 5px solid #black; 
-    padding: 5px;
-}
 
 .vertical-line{
   width: 1px; 
@@ -348,4 +346,10 @@ td {
 .right-menu li span {
     text-decoration: underline;
     
+}
+
+.wrapper {
+    width: 1215px;
+    height: 1266;
+    margin: 0 auto;
 }
